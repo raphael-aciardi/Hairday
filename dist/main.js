@@ -85,6 +85,16 @@ eval("!function(t,e){ true?module.exports=e():0}(this,(function(){\"use strict\"
 
 /***/ }),
 
+/***/ "./node_modules/dayjs/locale/pt-br.js":
+/*!********************************************!*\
+  !*** ./node_modules/dayjs/locale/pt-br.js ***!
+  \********************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+eval("!function(e,o){ true?module.exports=o(__webpack_require__(/*! dayjs */ \"./node_modules/dayjs/dayjs.min.js\")):0}(this,(function(e){\"use strict\";function o(e){return e&&\"object\"==typeof e&&\"default\"in e?e:{default:e}}var a=o(e),s={name:\"pt-br\",weekdays:\"domingo_segunda-feira_terça-feira_quarta-feira_quinta-feira_sexta-feira_sábado\".split(\"_\"),weekdaysShort:\"dom_seg_ter_qua_qui_sex_sáb\".split(\"_\"),weekdaysMin:\"Do_2ª_3ª_4ª_5ª_6ª_Sá\".split(\"_\"),months:\"janeiro_fevereiro_março_abril_maio_junho_julho_agosto_setembro_outubro_novembro_dezembro\".split(\"_\"),monthsShort:\"jan_fev_mar_abr_mai_jun_jul_ago_set_out_nov_dez\".split(\"_\"),ordinal:function(e){return e+\"º\"},formats:{LT:\"HH:mm\",LTS:\"HH:mm:ss\",L:\"DD/MM/YYYY\",LL:\"D [de] MMMM [de] YYYY\",LLL:\"D [de] MMMM [de] YYYY [às] HH:mm\",LLLL:\"dddd, D [de] MMMM [de] YYYY [às] HH:mm\"},relativeTime:{future:\"em %s\",past:\"há %s\",s:\"poucos segundos\",m:\"um minuto\",mm:\"%d minutos\",h:\"uma hora\",hh:\"%d horas\",d:\"um dia\",dd:\"%d dias\",M:\"um mês\",MM:\"%d meses\",y:\"um ano\",yy:\"%d anos\"}};return a.default.locale(s,null,!0),s}));\n\n//# sourceURL=webpack://hairday/./node_modules/dayjs/locale/pt-br.js?");
+
+/***/ }),
+
 /***/ "./src/styles/form.css":
 /*!*****************************!*\
   !*** ./src/styles/form.css ***!
@@ -188,9 +198,10 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
 /*!***************************!*\
   !*** ./src/libs/dayjs.js ***!
   \***************************/
-/***/ (() => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("\n\n//# sourceURL=webpack://hairday/./src/libs/dayjs.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var dayjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! dayjs */ \"./node_modules/dayjs/dayjs.min.js\");\n/* harmony import */ var dayjs__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(dayjs__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var dayjs_locale_pt_br__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! dayjs/locale/pt-br */ \"./node_modules/dayjs/locale/pt-br.js\");\n/* harmony import */ var dayjs_locale_pt_br__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(dayjs_locale_pt_br__WEBPACK_IMPORTED_MODULE_1__);\n\r\n  \r\n\r\ndayjs__WEBPACK_IMPORTED_MODULE_0___default().locale(\"pt-br\");\r\n\r\n\n\n//# sourceURL=webpack://hairday/./src/libs/dayjs.js?");
 
 /***/ }),
 
@@ -201,7 +212,17 @@ eval("\n\n//# sourceURL=webpack://hairday/./src/libs/dayjs.js?");
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _libs_dayjs_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./libs/dayjs.js */ \"./src/libs/dayjs.js\");\n/* harmony import */ var _libs_dayjs_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_libs_dayjs_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _styles_global_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles/global.css */ \"./src/styles/global.css\");\n/* harmony import */ var _styles_form_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./styles/form.css */ \"./src/styles/form.css\");\n/* harmony import */ var _styles_schedule_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./styles/schedule.css */ \"./src/styles/schedule.css\");\n/* harmony import */ var dayjs__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! dayjs */ \"./node_modules/dayjs/dayjs.min.js\");\n/* harmony import */ var dayjs__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(dayjs__WEBPACK_IMPORTED_MODULE_4__);\n\r\n\r\n;\r\n\r\n\r\n\r\n\r\n\r\n\r\nconsole.log(dayjs__WEBPACK_IMPORTED_MODULE_4___default()().format(\"HH:mm\"))\n\n//# sourceURL=webpack://hairday/./src/main.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _libs_dayjs_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./libs/dayjs.js */ \"./src/libs/dayjs.js\");\n/* harmony import */ var _styles_global_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles/global.css */ \"./src/styles/global.css\");\n/* harmony import */ var _styles_form_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./styles/form.css */ \"./src/styles/form.css\");\n/* harmony import */ var _styles_schedule_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./styles/schedule.css */ \"./src/styles/schedule.css\");\n/* harmony import */ var _modules_form_submit_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./modules/form/submit.js */ \"./src/modules/form/submit.js\");\n/* harmony import */ var _modules_form_submit_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_modules_form_submit_js__WEBPACK_IMPORTED_MODULE_4__);\n\r\n\r\n;\r\n\r\n\r\n\r\n\r\n\r\n\r\n\n\n//# sourceURL=webpack://hairday/./src/main.js?");
+
+/***/ }),
+
+/***/ "./src/modules/form/submit.js":
+/*!************************************!*\
+  !*** ./src/modules/form/submit.js ***!
+  \************************************/
+/***/ (() => {
+
+eval("const form = document.querySelector(\"form\")\r\n\r\nform.onsubmit = (event) => {\r\n    event.preventDefault()\r\n\r\n    console.log(\"Form enviado\")\r\n}\n\n//# sourceURL=webpack://hairday/./src/modules/form/submit.js?");
 
 /***/ }),
 
