@@ -212,7 +212,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var dayj
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _libs_dayjs_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./libs/dayjs.js */ \"./src/libs/dayjs.js\");\n/* harmony import */ var _styles_global_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles/global.css */ \"./src/styles/global.css\");\n/* harmony import */ var _styles_form_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./styles/form.css */ \"./src/styles/form.css\");\n/* harmony import */ var _styles_schedule_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./styles/schedule.css */ \"./src/styles/schedule.css\");\n/* harmony import */ var _modules_form_submit_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./modules/form/submit.js */ \"./src/modules/form/submit.js\");\n/* harmony import */ var _modules_form_submit_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_modules_form_submit_js__WEBPACK_IMPORTED_MODULE_4__);\n\r\n\r\n;\r\n\r\n\r\n\r\n\r\n\r\n\r\n\n\n//# sourceURL=webpack://hairday/./src/main.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _libs_dayjs_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./libs/dayjs.js */ \"./src/libs/dayjs.js\");\n/* harmony import */ var _styles_global_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles/global.css */ \"./src/styles/global.css\");\n/* harmony import */ var _styles_form_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./styles/form.css */ \"./src/styles/form.css\");\n/* harmony import */ var _styles_schedule_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./styles/schedule.css */ \"./src/styles/schedule.css\");\n/* harmony import */ var _modules_form_submit_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./modules/form/submit.js */ \"./src/modules/form/submit.js\");\n/* harmony import */ var _modules_load_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./modules/load.js */ \"./src/modules/load.js\");\n/* harmony import */ var _modules_load_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_modules_load_js__WEBPACK_IMPORTED_MODULE_5__);\n\r\n\r\n;\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\n\n//# sourceURL=webpack://hairday/./src/main.js?");
 
 /***/ }),
 
@@ -220,9 +220,20 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _lib
 /*!************************************!*\
   !*** ./src/modules/form/submit.js ***!
   \************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var dayjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! dayjs */ \"./node_modules/dayjs/dayjs.min.js\");\n/* harmony import */ var dayjs__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(dayjs__WEBPACK_IMPORTED_MODULE_0__);\n\r\nconst form = document.querySelector(\"form\")\r\n\r\nconst selectDate = document.querySelector(\"#date\")\r\n\r\nconst inputToday = dayjs__WEBPACK_IMPORTED_MODULE_0___default()().format(\"YYYY-MM-DD\")\r\n\r\nselectDate.value = inputToday\r\n\r\nselectDate.min = inputToday\r\n\r\nform.onsubmit = (event) => {\r\n    event.preventDefault()\r\n\r\n    console.log(\"Form enviado!!!!!!!!!!!!!!\")\r\n}\n\n//# sourceURL=webpack://hairday/./src/modules/form/submit.js?");
+
+/***/ }),
+
+/***/ "./src/modules/load.js":
+/*!*****************************!*\
+  !*** ./src/modules/load.js ***!
+  \*****************************/
 /***/ (() => {
 
-eval("const form = document.querySelector(\"form\")\r\n\r\nform.onsubmit = (event) => {\r\n    event.preventDefault()\r\n\r\n    console.log(\"Form enviado\")\r\n}\n\n//# sourceURL=webpack://hairday/./src/modules/form/submit.js?");
+eval("document.addEventListener(\"DOMContentLoaded\", () => {\r\n    console.log(\"DOM carregado\")\r\n})\n\n//# sourceURL=webpack://hairday/./src/modules/load.js?");
 
 /***/ }),
 
