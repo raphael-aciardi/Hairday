@@ -8,22 +8,24 @@ export function hoursLoad({date, dailySchedules}){
   hours.innerHTML = ""
 
   const unavailableHours = dailySchedules.map((schedule) => dayjs(schedule.when).format("HH:mm"))
-  console.log(unavailableHours)
 
   const opening = openingHours.map((hour) => {
     const [scheduleHour] = hour.split(":")
 
-    const isHoursPast = dayjs(date).add(scheduleHour, "hour").isAfter(dayjs())
+    const isHoursPast = dayjs(date).add(scheduleHour, "hour").isBefore(dayjs())
 
+    const available = !unavailableHours.includes(hour) && !isHoursPast
+
+    
     return{
       hour,
-      avaliable: isHoursPast
+      available
     }
   })
-  opening.forEach(({hour, avaliable}) => {
+  opening.forEach(({hour, available}) => {
     const li = document.createElement("li")
     li.classList.add("hour")
-    li.classList.add(avaliable ? "hour-available" : "hour-unavailable")
+    li.classList.add(available ? "hour-available" : "hour-unavailable")
     li.textContent = hour
 
     if (hour === "09:00") {
