@@ -10,15 +10,15 @@ export function schedulesShow({dailySchedules}) {
         periodAfternoon.innerHTML = ''
         periodNight.innerHTML = ''
 
-        dailySchedules.forEach(schedules => {
+        dailySchedules.forEach(schedule => {
             const item = document.createElement("li")
             const time = document.createElement("strong")
             const name = document.createElement("span")
 
-            item.setAttribute("data-id", schedules.dailySchedules)
+            item.setAttribute("data-id", schedule.id)
 
-            time.textContent = dayjs(schedules.when).format("HH:mm")
-            name.textContent = schedules.name
+            time.textContent = dayjs(schedule.when).format("HH:mm")
+            name.textContent = schedule.name
 
             const cancelIcon = document.createElement("img")
             cancelIcon.classList.add("cancel-icon")
@@ -27,7 +27,7 @@ export function schedulesShow({dailySchedules}) {
 
             item.append(time, name, cancelIcon) 
 
-            const hour = dayjs(schedules.when).format("HH")
+            const hour = dayjs(schedule.when).format("HH")
 
             if(hour < 12) {
                 periodMorning.append(item)
